@@ -1,16 +1,177 @@
-<!-- index.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="dist/style.css">
-  <title>SCSS Project</title>
+  <meta name="description" content="a landing page for an e-commerce app">
+  <meta name="keywords" content="e-commerce page, products,">
+  <!-- <link rel="stylesheet" href="dist/style.css"> -->
+  <title>E-commerce Page</title>
+  <style>
+    #rating img{
+      width: 20px;
+    }
+  </style>
 </head>
 <body>
   <header class="header">
-    <h1>Welcome to my SCSS Project</h1>
+    <a href="#" role="button"><img src="./src/images/logo.png" alt="E-commerce logo"></a>
+    <nav>
+      <ul aria-label="navigation menu">
+        <li><a role="button" href="#top">Home</a></li>
+        <li><a role="button" href="#about">About</a></li>
+        <li><a role="button" href="#products">Products</a></li>
+        <li><a role="button" href="#testimonials">Testimonials</a></li>
+        <li><a role="button" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
+
+  <main>
+    <section id="landing-page">
+      <h1>Crafted Products with Passion</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quis commodi aliquid deserunt eaque praesentium, et maiores, dolore similique quisquam veniam sed officia perspiciatis magnam quas ipsum, consectetur molestias nemo!
+        Ea qui vitae quod iure amet incidunt, vero quos unde excepturi dolorem quaerat, dignissimos similique eius consequatur fugit id dolor? Beatae, excepturi consequuntur. Repellendus recusandae culpa, ab porro sit veritatis.
+      </p>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde nisi accusamus, deserunt nostrum ut temporibus ullam pariatur incidunt nam, quae, quaerat saepe eum voluptatum tenetur adipisci ipsa voluptatibus vitae necessitatibus?
+        Non doloremque quia itaque magni voluptatem minus delectus placeat pariatur fuga aliquid dicta at modi reprehenderit quisquam similique mollitia necessitatibus quos, deserunt aut magnam consequatur maxime, quidem eum. Soluta, tenetur.
+        Tempora odit, est reiciendis ducimus voluptatibus sint blanditiis magnam. Molestias facere illo cumque veritatis quod non explicabo possimus totam tempore voluptatem adipisci autem culpa consequatur, earum debitis pariatur nesciunt amet.
+      </p>
+      <a href="#" role="button">Read more</a>
+    </section>
+
+    <section id="products">
+      <h2>Products</h2>
+      <section>
+        <div>
+          <img src="./src/images/product.png" alt="">
+          <h3>Product 1 name</h3>
+          <p>
+            Lorem ipsum dolor sit amet consecteturerit quae minus optio vel, magnam in odit iste debitis asperiores perferendis. Iste, praesentium voluptates magni ullam tempora totam alias minus!
+          </p>
+          <a role="button" href="#">Buy</a>
+        </div>
+        <div>
+          <img src="./src/images/product.png" alt="">
+          <h3>Product 2 name</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectet quas incidunt commodi harum debitis, sit itaque qui nisi recusandae odit, enim corporis temporibus perspiciatis perferendis a, maiores ullam obcaecati optio!
+          </p>
+          <a role="button" href="#">Buy</a>
+        </div>
+        <div>
+          <img src="./src/images/product.png" alt="">
+          <h3>Product 3 name</h3>
+          <p>
+            Lorem ipsum dolor sit amee unde quas reprehenderit iure, cumque nisi aperiam. Minus eveniet voluptates quod nemo, dolore fuga laudantium, asperiores quasi tempore sapiente facere!
+          </p>
+          <a role="button" href="#">Buy</a>
+        </div>
+        <a role="button" href="#">More Products</a>
+      </section>
+    </section>
+
+    <section id="testimonials">
+      <h2>TESTIMONIALS</h2>
+      <section>
+        <div>
+          <h3>Mohammed Ahmed</h3>
+          <div id="rating">
+            <img src="./src/images/srat-full.png" alt="rating star">
+            <img src="./src/images/srat-full.png" alt="rating star">
+            <img src="./src/images/srat-full.png" alt="rating star">
+            <img src="./src/images/star-unfull.png" alt="no rating star">
+            <img src="./src/images/star-unfull.png" alt="no rating star">
+          </div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium delectus corrupti quas amet inventore temporibus accusantium voluptate nemo odio consequatur, neque rem facere error, libero, debitis ratione illo at quasi.
+          </p>
+        </div>
+        <div>
+          <h3>Rawan Mohammed</h3>
+          <div id="rating">
+            <img src="./src/images/srat-full.png" alt="rating star">
+            <img src="./src/images/srat-full.png" alt="rating star">
+            <img src="./src/images/srat-full.png" alt="rating star">
+            <img src="./src/images/srat-full.png" alt="rating star">
+            <img src="./src/images/srat-full.png" alt="rating star">
+          </div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium delectus corrupti quas amet inventore temporibus accusantium voluptate nemo odio consequatur, neque rem facere error, libero, debitis ratione illo at quasi.
+          </p>
+        </div>
+        <div>
+          <h3>Reem Ahmed</h3>
+          <div id="rating">
+            <img src="./src/images/srat-full.png" alt="rating star">
+            <img src="./src/images/srat-full.png" alt="rating star">
+            <img src="./src/images/srat-full.png" alt="rating star">
+            <img src="./src/images/srat-full.png" alt="rating star">
+            <img src="./src/images/star-unfull.png" alt="no rating star">
+          </div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium delectus corrupti quas amet inventore temporibus accusantium voluptate nemo odio consequatur, neque rem facere error, libero, debitis ratione illo at quasi.
+          </p>
+        </div>
+        <div>
+          <h3>Nasser Ahmed</h3>
+          <div id="rating">
+            <img src="./src/images/srat-full.png" alt="rating star">
+            <img src="./src/images/srat-full.png" alt="rating star">
+            <img src="./src/images/srat-full.png" alt="rating star">
+            <img src="./src/images/srat-full.png" alt="rating star">
+            <img src="./src/images/srat-full.png" alt="rating star">
+          </div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium delectus corrupti quas amet inventore temporibus accusantium voluptate nemo odio consequatur, neque rem facere error, libero, debitis ratione illo at quasi.
+          </p>
+        </div>
+        <a role="button" href="#">More</a>
+      </section>
+    </section>
+
+    <section id="subscripe">
+      <h2>newsletter subscription</h2>
+      <p id="subscripe">Subscripe to our newletter channel to reciev the latest updates of products!</p>
+      <form action="post">
+        <label for="email">Email</label>
+        <input type="email" placeholder="Enter your email" name="email" id="email" aria-describedby="subscripe">
+        <input type="submit" value="subscripe">
+      </form>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <section>
+      <span id="important-pages">Important Pages</span>
+      <ul aria-labelledby="important-pages">
+        <li><a role="button" href="#">Important Page 1</a></li>
+        <li><a role="button" href="#">Important Page 2</a></li>
+        <li><a role="button" href="#">Important Page 3</a></li>
+      </ul>
+    </section>
+    <address>
+      Contact Us at <a role="button" href="mailto:webmaster@example.com">companyName</a>.<br>
+      Visit us at:<br>
+      Riyadh, Saudi Arabia<br>
+      Box 564, Alfaysalyah<br>
+      tel: +966-987-654-3210  
+    </address>
+    <section id="social-media">
+      <p>follow us on social media</p>
+      <div id="icons">
+        <a role="button" href="https://youtube.com/E-commerce"><img src="./src/images/youtube-icon.png" alt="youtube channel"></a>
+        <a role="button" href="https://twitter.com/E-commerce"><img src="./src/images/x-icon.png" alt="x icon"></a>
+        <a role="button" href="https://facebook.com/E-commerce"><img src="./src/images/facebook-icon.png" alt="facebook icon"></a>
+      </div>
+    </section>
+    <p>&copy! All Right Reserved 2024</p>
+  </footer>
 </body>
 </html>
