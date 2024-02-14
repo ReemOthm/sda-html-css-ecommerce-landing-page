@@ -6,6 +6,7 @@
     --main-bg:  #B4B4B8;
     --secandory-bg: #d5a5a2; 
     --shadow-bg: #2222221a;
+    --section-padding: 2em;
 }
 
 *{
@@ -166,6 +167,34 @@ body{
     }
 }
 /* End Landing Section */
+
+/* Start Container Section */
+.container-section {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.section__title{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section__description {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    word-break: break-all;
+}
+
+.btn--more{
+    background-color: var(--head-color);
+    color: var(--secandory-color);
+    width: fit-content;
+    padding: 0.5em 1em;
+    border-radius:6px;
+    margin: 2rem auto;
+}
+/* End Container Section */
 
 
 /* Start Animation */
