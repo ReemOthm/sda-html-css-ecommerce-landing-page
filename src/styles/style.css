@@ -119,7 +119,6 @@ body{
         padding: 15px !important;
     }
 }
-
 /* End Header Section */
 
 /* Start Landing Section */
@@ -149,6 +148,22 @@ body{
     word-break: break-all;
     font-weight: 700;
     font-size: 1.2rem;
+}
+
+/* Landing Media Screen */
+@media (max-width: 991px){
+    .landing-container{
+        width: 80%;
+    }
+    .landing__description{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 767px){
+    .landing__title{
+        font-size: 1.6rem;
+    }
 }
 /* End Landing Section */
 
