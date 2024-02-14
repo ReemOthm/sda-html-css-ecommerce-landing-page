@@ -1,8 +1,11 @@
 :root{
-    --main-color: "";
-    --main-bg: "";
-    --secandory-color: "";
-    --secandory-bg: ""; 
+    --main-color: #222;
+    --secandory-color: white;
+    --head-color: #b1154a;
+    --title-color: #C5796D;
+    --main-bg:  #B4B4B8;
+    --secandory-bg: #d5a5a2; 
+    --shadow-bg: #2222221a;
 }
 
 *{
@@ -18,12 +21,14 @@ ul{
 a{
     text-decoration: none;
     display: block;
+    color: var(--main-color);
 }
 
 body{
     font-family: "Cairo", sans-serif;
     padding: 0;
     margin: 0;
+    color: var(--main-color);
 }
 
 /* Start Header Section */
@@ -32,6 +37,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 0 5em;
+    height: 68px;
 }
 
 .header__logo {
@@ -39,6 +45,7 @@ body{
     font-weight: 800;
     font-style: italic;
     letter-spacing: -0.1rem;
+    color: var(--title-color);
 }
 
 .header-nav ul{
@@ -52,8 +59,52 @@ body{
 }
 
 .header-nav ul > li > a:hover{
-    background-color: var(--main-bg);
+    color: var(--secandory-color);
+    background-color: var(--secandory-bg);
+}
+/* End Header Section */
+
+/* Start Landing Section */
+.landing-page{
+    height: calc(100vh - 68px);
+    display: grid;
+    place-items: center;
+    background: linear-gradient(-45deg, #C5796D, #d0afb1, #d48d82, #d7cfd9);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
 }
 
+.landing-container{
+    width: 50%;
+    text-align: center;
+    color: var(--main-color);
+}
 
-/* End Header Section */
+.landing__title{
+    font-size: 2rem;
+    color: var(--secandory-color);
+    background-color: var(--shadow-bg);
+}
+
+.landing__description{
+    word-break: break-all;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+/* End Landing Section */
+
+
+/* Start Animation */
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+/* End Animation */
