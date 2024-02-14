@@ -1,5 +1,8 @@
 :root{
-
+    --main-color: "";
+    --main-bg: "";
+    --secandory-color: "";
+    --secandory-bg: ""; 
 }
 
 *{
@@ -8,13 +11,49 @@
 
 ul{
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 a{
     text-decoration: none;
+    display: block;
 }
 
 body{
-    font-family: "";
-    padding: "";
+    font-family: "Cairo", sans-serif;
+    padding: 0;
+    margin: 0;
 }
+
+/* Start Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5em;
+}
+
+.header__logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-style: italic;
+    letter-spacing: -0.1rem;
+}
+
+.header-nav ul{
+    display: flex;
+}
+
+.header-nav ul > li > a{
+    padding: 1em;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.header-nav ul > li > a:hover{
+    background-color: var(--main-bg);
+}
+
+
+/* End Header Section */
