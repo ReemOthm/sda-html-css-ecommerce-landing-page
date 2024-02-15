@@ -262,8 +262,8 @@ body{
 /* Start Testimonials Section */
 .test-container{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 30px;
 }
 
 .test-card{
@@ -280,9 +280,16 @@ body{
     margin: 1rem;
 }
 
-.test__name,
-.test__content{
+.test-details{
+    padding: 0 1em 0 0;
+}
+
+.test__name{
     margin-bottom: 0.5rem;
+}
+
+.test__content{
+    margin-top: 0.5rem;
 }
 
 .test__rating{
@@ -306,6 +313,7 @@ body{
     padding: 1em;
     margin: 1rem auto;
     text-align: center;
+    padding-bottom: var(--section-padding);
 }
 
 .subscripe-form{
@@ -345,6 +353,79 @@ body{
     }
 }
 /* End subscripe section */
+
+/* Start footer */
+.footer{
+    background-color: #222;
+    color: var(--secandory-color);
+}
+.footer > section{
+    display: flex;
+    padding: 0 1em;
+    justify-content: space-around;
+    padding: 0 1em;
+}
+
+.footer-section{
+    padding: 1em;
+}
+
+.footer__title{
+    font-weight: 700;
+}
+
+.footer-list > li {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    text-align: center;
+}
+
+.footer-list > li svg {
+    width: 20px;
+    margin-right: .3rem;
+}
+
+.footer-list > li a {
+    color: white;
+}
+
+.contact--btn{
+    color: var(--head-color);
+    display: inline;
+    font-weight: 800;
+}
+
+.footer-icons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-icons i{
+    font-size: 2rem;
+    color: white;
+}
+
+.footer__copyrights{
+    text-align: center;
+    font-size: 1rem;
+    padding: 1em;
+    border-top: 1px solid #ccc;
+    margin: 0;
+}
+
+/* Footer Media */
+@media (max-width: 767px){
+    .footer > section{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-list{
+        margin: auto;
+    }
+}
+/* End footer */
 
 /* Start Animation */
 @keyframes gradient {
