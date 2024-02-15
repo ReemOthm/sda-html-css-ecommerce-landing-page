@@ -77,7 +77,15 @@ body{
 /*End Page Container  */
 
 /* Start Header Section */
-.header {
+.header{
+    background-color: #f9f8f8;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid var(--head-color);
+}
+
+.header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
