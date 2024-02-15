@@ -157,7 +157,7 @@ body{
     }
     
     .header-list > li > a{
-        padding: 15px !important;
+        padding: 15px;
     }
 }
 /* End Header Section */
