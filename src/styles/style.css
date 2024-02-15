@@ -259,6 +259,42 @@ body{
 }
 /* End Products Section */
 
+/* Start Testimonials Section */
+.test-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 40px;
+}
+
+.test-card{
+    display: flex;
+    background-color: #f3f3f3;
+    border-radius: 35px;
+}
+
+.test__img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 1rem;
+}
+
+.test__name,
+.test__content{
+    margin-bottom: 0.5rem;
+}
+
+.test__rating{
+    display: flex;
+}
+
+.test__rating svg{
+    width: 20px;
+}
+
+/* End Testimonials Section */
+
 
 /* Start Animation */
 @keyframes gradient {
