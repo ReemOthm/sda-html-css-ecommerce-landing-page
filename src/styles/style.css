@@ -224,11 +224,15 @@ body{
 /* Landing Media Screen */
 @media screen and (max-width: 991px){
     .landing__description{
+        width: 80%;
         font-size: 1rem;
     }
 }
 
 @media screen and (max-width: 767px){
+    .landing-page{
+        background-size: 150% 150%;
+    }
     .landing__title{
         font-size: 1.6rem;
     }
